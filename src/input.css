@@ -81,6 +81,11 @@
  .bg-color-5{
   background-color: #01001A;
  }
+ 
+
+ .bg-gradient{
+  background: -webkit-linear-gradient(45deg,#02AAB0, #00CDAC 100%);
+ }
 
  .btn-col-1{
   background-color: #0D4841;
@@ -122,18 +127,21 @@
  .arrow:hover{
   color: #ffffff;
   background-color: #0D4841;
-  /* transition-duration: 300ms; */
  }
 
  .nav-bar a::before {
   content: '';
   height: 3px;
   width: 0%;
-  background: #ffc301;
+  background: #1b8b7e;
   position: absolute;
   left: 0;
   top:33px;
   bottom: -1;
   transition: 0.4s;
+ }
+
+ .nav-bar a:hover::before {
+  width: 100%;
  }
 }
